@@ -14,7 +14,9 @@ _Learn about the person you're helping. Update this as you go._
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- 국제 뉴스 브리핑은 정치/경제 중심을 선호함.
+- 경제 이슈 중에서도 기술산업 관련 흐름을 특히 중요하게 봄.
+- 문화/연성 이슈보다 정책, 지정학, 산업 구조 변화 쪽의 밀도가 높은 요약을 선호할 가능성이 큼.
 
 ---
 
