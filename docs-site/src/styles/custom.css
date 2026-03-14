@@ -1,0 +1,88 @@
+:root {
+  --sl-font: 'Inter', 'Pretendard', system-ui, sans-serif;
+  --sl-color-accent-low: #eef2ff;
+  --sl-color-accent: #4f46e5;
+  --sl-color-accent-high: #312e81;
+  --sl-color-white: #0f172a;
+  --sl-color-gray-1: #1e293b;
+  --sl-color-gray-2: #334155;
+  --sl-color-gray-3: #475569;
+  --sl-color-gray-4: #64748b;
+  --sl-color-gray-5: #94a3b8;
+  --sl-color-gray-6: #cbd5e1;
+  --sl-color-gray-7: #e2e8f0;
+  --sl-color-gray-8: #f8fafc;
+  --sl-color-black: #ffffff;
+  --sl-content-width: 54rem;
+  --sl-text-5xl: 3.25rem;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #1e1b4b;
+  --sl-color-accent: #818cf8;
+  --sl-color-accent-high: #c7d2fe;
+  --sl-color-white: #e5eefb;
+  --sl-color-gray-1: #cbd5e1;
+  --sl-color-gray-2: #94a3b8;
+  --sl-color-gray-3: #64748b;
+  --sl-color-gray-4: #475569;
+  --sl-color-gray-5: #334155;
+  --sl-color-gray-6: #1e293b;
+  --sl-color-gray-7: #0f172a;
+  --sl-color-gray-8: #020617;
+  --sl-color-black: #020617;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at top, rgba(79, 70, 229, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,250,252,0.96));
+  border-bottom: 1px solid rgba(99, 102, 241, 0.08);
+}
+
+:root[data-theme='dark'] .hero {
+  background:
+    radial-gradient(circle at top, rgba(129, 140, 248, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(2,6,23,0.96), rgba(2,6,23,0.92));
+  border-bottom: 1px solid rgba(129, 140, 248, 0.12);
+}
+
+.hero h1,
+.hero .tagline {
+  letter-spacing: -0.02em;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+:root[data-theme='dark'] .card {
+  box-shadow: none;
+  border-color: rgba(129, 140, 248, 0.16);
+}
+
+main .sl-markdown-content :is(h1, h2, h3) {
+  letter-spacing: -0.02em;
+}
+
+main .sl-markdown-content p,
+main .sl-markdown-content li {
+  line-height: 1.85;
+}
+
+main .sl-markdown-content blockquote {
+  border-inline-start: 4px solid var(--sl-color-accent);
+  background: rgba(99, 102, 241, 0.06);
+  padding: 1rem 1.25rem;
+  border-radius: 0 16px 16px 0;
+}
+
+main .sl-markdown-content hr {
+  margin: 2.5rem 0;
+}
+
+.sl-link-button.primary {
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.18);
+}
