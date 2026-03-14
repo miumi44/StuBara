@@ -1,0 +1,64 @@
+:root {
+  --stubara-bg: linear-gradient(180deg, #fbf7ff 0%, #f7f3ff 48%, #eef2ff 100%);
+  --stubara-ink: #0f172a;
+  --stubara-soft: #6b7280;
+  --stubara-line: rgba(148, 163, 184, 0.18);
+  --stubara-card: rgba(255, 255, 255, 0.74);
+  --stubara-shadow: 0 20px 60px rgba(99, 102, 241, 0.10);
+}
+
+html.dark {
+  --stubara-bg: linear-gradient(180deg, #09090f 0%, #111827 52%, #0f172a 100%);
+  --stubara-ink: #f8fafc;
+  --stubara-soft: #cbd5e1;
+  --stubara-line: rgba(255, 255, 255, 0.08);
+  --stubara-card: rgba(15, 23, 42, 0.58);
+  --stubara-shadow: 0 24px 70px rgba(2, 6, 23, 0.35);
+}
+
+body {
+  background: var(--stubara-bg);
+  color: var(--stubara-ink);
+}
+
+header.sticky {
+  background: rgba(255,255,255,0.68) !important;
+  backdrop-filter: blur(14px);
+  border-bottom-color: var(--stubara-line) !important;
+}
+html.dark header.sticky {
+  background: rgba(15,23,42,0.65) !important;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 999px !important;
+  box-shadow: var(--stubara-shadow);
+}
+
+main section > .grid > div,
+main .rounded-3xl,
+main article {
+  border-color: var(--stubara-line) !important;
+}
+
+main .rounded-3xl {
+  box-shadow: var(--stubara-shadow);
+}
+
+main a {
+  text-underline-offset: 0.18em;
+}
+
+main h1, main h2, main h3 {
+  letter-spacing: -0.03em;
+}
+
+main p {
+  line-height: 1.85;
+}
+
+@media (max-width: 768px) {
+  header .text-xl { font-size: 1.05rem; }
+  body { -webkit-font-smoothing: antialiased; }
+}
