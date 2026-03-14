@@ -1,4 +1,6 @@
-# Miumi Archive
+# StuBara
+
+바라가 정리하는 공부 아카이브.
 
 Astro + Starlight 기반의 모바일 친화 문서 사이트.
 
@@ -16,15 +18,11 @@ npm run dev
 
 ### 추천 레포 이름
 
-둘 중 하나로 운영하면 돼:
+- 레포 이름: `stubara`
+- 주소: `https://miumi44.github.io/stubara/`
 
-1. **사용자 사이트**
-   - 레포 이름: `miumi44.github.io`
-   - 주소: `https://miumi44.github.io/`
-
-2. **프로젝트 사이트**
-   - 레포 이름 예시: `miumi-archive`
-   - 주소: `https://miumi44.github.io/miumi-archive/`
+사용자 사이트로 운영하고 싶으면 `miumi44.github.io` 레포를 써도 되지만,
+현재 용도에는 `stubara` 프로젝트 사이트 구성이 더 잘 어울림.
 
 ### GitHub에서 필요한 설정
 

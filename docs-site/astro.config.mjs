@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 const site = process.env.SITE_URL || 'https://miumi44.github.io';
-const repo = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'miumi-archive';
+const repo = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'stubara';
 const isUserSite = repo === 'miumi44.github.io';
 const base = process.env.BASE_PATH || (isUserSite ? '/' : `/${repo}/`);
 
@@ -12,8 +12,8 @@ export default defineConfig({
 	base,
 	integrations: [
 		starlight({
-			title: 'Miumi Archive',
-			description: '바라가 정리한 리서치와 메모를 담는 세련된 문서 아카이브',
+			title: 'StuBara',
+			description: '바라가 정리하는 공부 아카이브',
 			customCss: ['./src/styles/custom.css'],
 			head: [
 				{
