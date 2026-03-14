@@ -2,8 +2,14 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const site = process.env.SITE_URL || 'https://miumi44.github.io';
+const repo = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'miumi-archive';
+const isUserSite = repo === 'miumi44.github.io';
+const base = process.env.BASE_PATH || (isUserSite ? '/' : `/${repo}/`);
+
 export default defineConfig({
-	site: 'http://127.0.0.1:4321',
+	site,
+	base,
 	integrations: [
 		starlight({
 			title: 'Miumi Archive',

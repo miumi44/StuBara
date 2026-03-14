@@ -1,49 +1,45 @@
-# Starlight Starter Kit: Basics
+# Miumi Archive
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Astro + Starlight 기반의 모바일 친화 문서 사이트.
 
-```
-npm create astro@latest -- --template starlight
-```
+## 로컬 실행
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```bash
+cd docs-site
+npm install
+npm run dev
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## GitHub Pages 배포
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+이 프로젝트는 GitHub Actions로 GitHub Pages에 배포되도록 설정돼 있음.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+### 추천 레포 이름
 
-## 🧞 Commands
+둘 중 하나로 운영하면 돼:
 
-All commands are run from the root of the project, from a terminal:
+1. **사용자 사이트**
+   - 레포 이름: `miumi44.github.io`
+   - 주소: `https://miumi44.github.io/`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. **프로젝트 사이트**
+   - 레포 이름 예시: `miumi-archive`
+   - 주소: `https://miumi44.github.io/miumi-archive/`
 
-## 👀 Want to learn more?
+### GitHub에서 필요한 설정
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+1. 이 폴더 내용을 GitHub 레포에 push
+2. GitHub 레포에서 **Settings → Pages** 이동
+3. **Source** 를 **GitHub Actions** 로 선택
+4. `main` 또는 `master` 브랜치에 push 하면 자동 배포
+
+### 참고
+
+- `astro.config.mjs` 는 GitHub Pages의 레포 이름에 맞춰 base path를 자동 계산함
+- `SITE_URL` 은 GitHub Actions에서 자동 주입됨
+
+## 현재 문서
+
+- 바이오사이언스 산업동향
+
+원하면 이후에 뉴스 브리핑 아카이브, 태그 구조, 커스텀 도메인까지 확장 가능.
