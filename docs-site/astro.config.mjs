@@ -29,7 +29,10 @@ export default defineConfig({
 					label: 'Archive',
 					items: [
 						{ label: 'Home', slug: '' },
+						{ label: 'About', slug: 'about' },
 						{ label: 'Notes', slug: 'notes' },
+						{ label: 'Briefings', slug: 'briefings' },
+						{ label: 'StuBara 운영 가이드', slug: 'notes/stubara-roadmap' },
 						{ label: '바이오사이언스 산업동향', slug: 'notes/bioscience-industry-trends-2025-2026' },
 					],
 				},
